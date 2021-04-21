@@ -1,25 +1,34 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar mode="ios" color="tertiary">
-    <ion-title>Books</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 <ion-content>
 
- 
+  <app-banner-read></app-banner-read>
 
   <section class="titleCategories">
     <h4>Fiction</h4>
   </section>
-  <app-book start="0" end="8" [elements]="books"></app-book>
+  
+  <div class="responsiveCenter">
+    <app-book start="0" end="8" [elements]="books"></app-book>
+  </div>
+
   <br>
-  <app-book start="8" end="16" [elements]="books"></app-book>
+  <div class="responsiveCenter">
+    <app-book start="8" end="16" [elements]="books"></app-book>
+  </div>
 
   <section class="titleCategories">
     <h4>No fiction</h4>
   </section>
-  <app-book start="0" end="8" [elements]="noFictionBooks"></app-book>
+
+  <div class="responsiveCenter">
+    <app-book start="0" end="8" [elements]="noFictionBooks"></app-book>
+  </div>
+ 
   <br>
-  <app-book start="8" end="16" [elements]="noFictionBooks"></app-book>
+  <div  class="responsiveCenter">
+    <app-book start="8" end="16" [elements]="noFictionBooks"></app-book>
+  </div>
+ 
  
 
   <ion-button routerLink="/home/explore" mode="ios" color="light" expand="block">Explore

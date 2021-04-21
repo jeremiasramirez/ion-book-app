@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-banner-read',
@@ -7,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BannerReadComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {}
+  explore():void{
+    this.router.navigate(["/home/explore"])
+  }
 
 }

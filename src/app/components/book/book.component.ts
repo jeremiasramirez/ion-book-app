@@ -14,7 +14,7 @@ export class BookComponent{
   @Input() private end :number=8;
 
 
-  private opts={ slidesPerView:2.3, freeMode:true,spaceBetween: -7};
+  private opts={ slidesPerView:3.3, freeMode:true,spaceBetween: -7};
 
 
   constructor(private service:BookService) { }

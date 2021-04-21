@@ -12,7 +12,7 @@ export class ShowexploreComponent implements OnInit {
   @Input() private elements :any[] = [];
   @Input () private textInput :string = '';
   private start:number=0;
-  private end:number=20;
+  private end:number=70;
   
   private timingRouter:any;
   private timingMore:any;
