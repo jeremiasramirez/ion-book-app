@@ -1,0 +1,7 @@
+{
+  "name": "booksApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

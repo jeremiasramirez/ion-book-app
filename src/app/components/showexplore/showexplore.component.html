@@ -1,0 +1,19 @@
+ 
+ <app-skeletonexplore *ngIf="elements.length < 1"></app-skeletonexplore>
+ <div class="responsiveCenter">
+  
+  <section class="container__category " *ngIf="elements.length > 1">
+
+    <article class="card__category animateIn" *ngFor="let explore of elements|slice:start:end | searchbook:elements:textInput " (click)="navigateTo(explore.list_name_encoded)">
+      <h1>{{ explore.display_name }}</h1>
+      <p>update {{ explore.updated }}  </p>
+      <ion-ripple-effect></ion-ripple-effect>
+    </article>
+
+  
+  </section>
+</div>
+
+<ion-infinite-scroll color="tertiary" threshold="130px" (ionInfinite)="more($event)">
+  <ion-infinite-scroll-content color="tertiary"></ion-infinite-scroll-content>
+</ion-infinite-scroll>
